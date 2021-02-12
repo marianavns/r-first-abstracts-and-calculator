@@ -6,12 +6,14 @@ Este repositório contem o projeto de uma calculadora simples feita em R. Abaixo
 
 - [Passo a passo](#Passo-a-Passo)
   - [Pré-requisitos](#Pré-requisitos)
-  - [Criando o repositório para guardar os arquivos do projeto](#Criando o repositório para guardar os arquivos do projeto)
+  - [Criando o repositório para guardar os arquivos do projeto](#Criando-o-repositório-para-guardar-os-arquivos-do-projeto)
   - [Preparando o ambiente com os pacotes necessários](#Preparando-o-ambiente-com-os-pacotes-necessários)
   - [Criando a primeira função da calculadora](#Criando-a-primeira-função-da-calculadora)
     - [Renomeando o arquivo principal](#Renomeando-o-arquivo-principal);
     - [Digitando e rodando a primeira função da calculadora](#Digitando-e-rodando-a-primeira-função-da-calculadora);
   - [Criando a documentação com o Roxygen](#Criando-a-documentação-com-o-Roxygen)
+
+ ![:octocat:](https://github.githubassets.com/images/icons/emoji/octocat.png) Este é meu primeiro projeto em R. Se tiver alguma sugestão ou correção, clica [AQUI](https://github.com/marianavns/r-simple-calculator/issues) e seleciona _New Issue_. Obrigada!
 
 ## Passo a passo
 
