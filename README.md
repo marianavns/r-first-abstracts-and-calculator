@@ -106,14 +106,20 @@ somar <- function(a,b) {
 ```
 
 15. Existe um arquivo na sua área de navegação chamado `NAMESPACE`. Ele guarda todas as funções que você está exportando. **Delete, pois vamos fazer um novo** no passo abaixo.
+
 16. Na barra de navegação do RStudio, selecione as opção `Tools -> Project Options -> Build Tools`
+
 17. Marque a caixa _Generate documentation with Roxygen_;
+
 18. Abrirá uma nova janela. Certifique-se que todas as caixas estão marcadas, exceto _Vignettes_. Ela não será importante agora. Selecione OK.
+
 19. No console, digite `??somar` e confira se aquele texto que escrevemos no passo 13 aparece na aba "Help".
 
-*Pronto, a documentação foi criada!*
+    *Pronto, a documentação foi criada!*
 
-**Parabéns, seu primeiro pacote está pronto!**
+20. Clique na aba `Build -> Check Package`
+
+**Parabéns, seu primeiro pacote está pronto e disponível!**
 
 <img src="./assets/celebration.gif" width="40%">
 
