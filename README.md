@@ -11,7 +11,8 @@ Este repositório contem o projeto de uma calculadora simples feita em R. Abaixo
   - [Criando a primeira função da calculadora](#Criando-a-primeira-função-da-calculadora)
     - [Renomeando o arquivo principal](#Renomeando-o-arquivo-principal);
     - [Digitando e rodando a primeira função da calculadora](#Digitando-e-rodando-a-primeira-função-da-calculadora);
-  - [Criando a documentação com o Roxygen](#Criando-a-documentação-com-o-Roxygen)
+  - [Criando a documentação das funções com o Roxygen](#Criando-a-documentação-das-funçoes-com-o-Roxygen)
+  - [Criando a documentação do projeto todo com o RMarkdown](#Criando-a-documentação-do-projeto-todo-com-o-RMarkdown)
 
  ![:octocat:](https://github.githubassets.com/images/icons/emoji/octocat.png) Este é meu primeiro projeto em R. Se tiver alguma sugestão ou correção, clica [AQUI](https://github.com/marianavns/r-simple-calculator/issues) e seleciona _New Issue_. Obrigada!
 
@@ -123,3 +124,30 @@ somar <- function(a,b) {
 
 <img src="./assets/celebration.gif" width="40%">
 
+### Criando a documentação do projeto todo com o RMarkdown
+
+Uma outra funcionalidade que o RStudio oferece é a possibilidade de criar um "documento de apresentação" do projeto todo. Para fazer isso, usaremos uma linguagem chamada _markdown_. Ela permite que criemos um texto adicionando títulos, sumário, imagens e (quase) todo o resto que permitir em termos de edição de texto.
+
+Para começar, selecione no RStudio:
+`File -> New File -> R Markdown`
+
+Verifique se está na aba "Document". Adicione o título e os autores e selecione o tipo de arquivo que será criado em segundo plano, além do arquivo markdown. É possível que seja HTML (caso queira visualizar posteriormente num navegador), PDF ou Word. Acredito que a opção mais utilizada seja HTML.
+
+Feito isto, seu RStudio vai criar um arquivo chamado "Untitled". Ele ainda não está salvo no seu projeto. Para que isso aconteça, clique em 'Knit'. Agora sim seu projeto tem um arquivo com extensão ".Rmd", para suas edições, e ".html", para ver o resultado final.
+
+#### Tornando esta documentação visível para o GitHUB
+
+Se o projeto for colocado do jeito que está no github, o site entenderá que deve ler apenas o arquivo HTML e apresentar a quem está visitando seu repositório. Mas temos um problema aí: o Github não renderiza (não mostra da forma certa) os arquivos .html. Ele precisa estar em formato .md.
+
+Para configurar isto, vamos no cabeçalho do arquivo da documentação, o ".Rmd", e façamos a seguinte alteração:
+
+`output: html_document` vai virar:
+
+```
+output:
+  github_document:
+    fig_width: 9
+    fig_height: 5
+```
+
+Feito isso e selecionando "Knit" de novo, o RStudio vai criar um arquivo no formato .md, que é aquilo que o GitHUB entende! ;)
